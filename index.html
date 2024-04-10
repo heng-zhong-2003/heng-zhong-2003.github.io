@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <meta charset='utf-8'>
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
 <meta http-equiv='pragma' content='no-cache'>
 <html>
-  <head>
-    <style>
-      .column {
-          float: left;
-          width: 50%;
-      }
-      .row:after {
-          content: "";
-          display: table;
-          clear: both;
-      }
-    </style>
-    <title>Heng Zhong</title>
-  </head>
-  <body>
-    <h1>Heng Zhong (仲 恒)</h1>
-    <p>e-mail: hzhong21@m.fudan.edu.cn</p>
-    <p>Department of Computer Science, Fudan University</p>
-    <p>Undergraduate</p>
-    <h2>Research Interests</h2>
-    <hr>
-    <p>Programming Languages, Computational Complexity, Design and Analysis of Algorithms</p>
-    <h2>Education</h2>
-    <hr>
-    <div class="row">
-      <div class="column">
-        <p style="color: blue;">Fudan University (复旦大学)</p>
-        <p>Bachelor of Computer Science</p>
-        <p>GPA: 3.52/4.0</p>
-        <p>With exchange experience at <font style="color: blue;">the University of Hong Kong (香港大學)</font>, GPA: 3.83</p>
-        <p>Research Mentor: Dr. Yuan Li</p>
-      </div>
-      <div class="column">
-        <p>Shanghai, China</p>
-        <p>Sep. 2021 -- Present</p>
-        <p>Ranking: 48/101</p>
-      </div>
+
+<head>
+  <style>
+    .column {
+      float: left;
+      width: 50%;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+  <title>Heng Zhong</title>
+</head>
+
+<body>
+  <h1>Heng Zhong (仲 恒)</h1>
+  <p>e-mail: hzhong21@m.fudan.edu.cn</p>
+  <p>Department of Computer Science, Fudan University</p>
+  <p>Undergraduate</p>
+  <h2>Research Interests</h2>
+  <hr>
+  <p>Programming Languages, Computational Complexity, Design and Analysis of Algorithms</p>
+  <h2>Education</h2>
+  <hr>
+  <div class="row">
+    <div class="column">
+      <p style="color: blue;">Fudan University (复旦大学)</p>
+      <p>Bachelor of Computer Science</p>
+      <p>GPA: 3.52/4.0</p>
+      <p>With exchange experience at <font style="color: blue;">the University of Hong Kong (香港大學)</font>, GPA: 3.83</p>
+      <p>Research Mentor: Dr. Yuan Li</p>
     </div>
-    <div class="row">
-      <div class="column">
-        <p style="color: blue;">Shenzhen Middle School (深圳中学)</p>
-        <p>Senior High School</p>
-        <p>GPA: 3.91/4.02</p>
-      </div>
-      <div class="column">
-        <p>Shenzhen, Guangdong, China</p>
-        <p>Sep. 2018 -- June 2021</p>
-      </div>
+    <div class="column">
+      <p>Shanghai, China</p>
+      <p>Sep. 2021 -- Present</p>
+      <p>Ranking: 48/101</p>
     </div>
-    <h2>Research Experience</h2>
-    <hr>
-    <h3>Design and Optimization of Graph Isomorphism Algorithms</h3>
-    <p>Mentor: Dr. Haibin Kan</p>
-    <ul>
-      <li> Significantly optimized the VF algorithm using the method of canonical labeling of graphs, which was learned from Laszlo Babai's Paper Graph Isomorphism in Quasipolynomial Time.</li>
-      <li> This optimization improved the VF series algorithms by reducing the candidate vertices in the matching procedure using WL refinement.</li>
-      <li> Result: Non-isomorphic cases can be detected in O(n^2) time during preprocessing with only probability exp(-cn log n/log log n) of failure. Moreover, in the failure and isomorphic cases, the average running time in experiment has decreased by more than a half.
-    </ul>
-    <h3>Circuit Complexity of Universal Hashing</h3>
-    <p>Mentor: Dr. Yuan Li</p>
-    <p>This project intends to find tight bounds on the circuit complexity of universal hashing. Still in progress. Phased results have been made. This is a long-term project.</p>
-    <h2>Papers</h2>
-    <hr>
-    <h2>Skills</h2>
-    <hr>
-    <p> Programming: Proficient in Haskell and SML; familiar with Modern C++, Java and Python; learning Coq.</p>
-    <p> Language: English (Professional, GRE 331), Chinese (Native), Japanese (Fluent)</p>
-    <h2>Recent work</h2>
-    <hr>
-    <p>Working with Marisa Kirisame (the University of Utah) on software caching and rematerialization. Outstanding results on time-for-space tradeoff have been made. This work will be submitted to ICFP' 2024 very soon.</p>
-    <p>Working on the topic <i>circuit complexity of universal hashing</i>, phased results have been made. Long-term project.</p>
-    <p>Reading <i>Software Founcations</i> by B. C. Pierce et al. to learn  about Coq and program verification. About to finish reading the first two volumes in late March.</p>
-    <p>Reading the main thread of <i>Types and Programming Languages</i>. About to finish in late May.</p>
-    <h2>Important Coursework</h2>
-    Most getting an A grade (≤ 30% at Fudan, usually ≤ 20% at HKU), no less than B+.
-    <ul>
+  </div>
+  <div class="row">
+    <div class="column">
+      <p style="color: blue;">Shenzhen Middle School (深圳中学)</p>
+      <p>Senior High School</p>
+      <p>GPA: 3.91/4.02</p>
+    </div>
+    <div class="column">
+      <p>Shenzhen, Guangdong, China</p>
+      <p>Sep. 2018 -- June 2021</p>
+    </div>
+  </div>
+  <h2>Research Experience</h2>
+  <hr>
+  <h3>3. Zombie: A software caching and rematerialization system</h3>
+  <p>Advisor: Marisa Kirisame, PhD Candidate</p>
+  <p>Design and implemented a software caching system, and a purely functional language built thereon. This system
+    allows programs to continue running (albeit slower) while using much
+    less memory than necessary to store all of the program's heap-accessible values.</p>
+  <p>Detailed results are shown in paper [1]. The project repository itself is stored at
+    https://github.com/MarisaKirisame/zombie and https://github.com/MarisaKirisame/TVirus</p>
+  <h3>2. Circuit Complexity of Universal Hashing</h3>
+  <p>Advisor: Dr. Yuan Li</p>
+  <p>This project intends to find tight bounds on the circuit complexity of universal hashing. Still in progress. Phased
+    results have been made. This is a long-term project.</p>
+  <h3>1. Design and Optimization of Graph Isomorphism Algorithms</h3>
+  <p>Advisor: Dr. Haibin Kan</p>
+  <ul>
+    <li> Significantly optimized the VF algorithm using the method of canonical labeling of graphs, reducing the
+      candidate vertices in the matching
+      procedure using WL refinement.</li>
+    <li> Result: Non-isomorphic cases can be detected in O(n^2) time during preprocessing with only probability exp(-cn
+      log n/log log n) of failure. Moreover, in the failure and isomorphic cases, the average running time in experiment
+      has decreased by more than a half.
+  </ul>
+  <h2>Papers</h2>
+  <p>[1] Marisa Kirisame, Sihao Chen, <b>Heng Zhong</b>, Tiezhi Wang, Pavel Panchekha. Uncomputation. Not yet submitted
+    and some minor parts remain to be fixed. Newest version available at https://github.com/MarisaKirisame/zombie_paper
+  </p>
+  <hr>
+  <h2>Skills</h2>
+  <hr>
+  <p> Programming: Proficient in Haskell and SML; familiar with Modern C++, Java and Python; learning Coq.</p>
+  <p> Language: English (Professional, GRE 331), Chinese (Native), Japanese (Fluent)</p>
+  <h2>Recent work</h2>
+  <hr>
+  <p>Working with Marisa Kirisame (the University of Utah) on software caching and rematerialization. Outstanding
+    results on time-for-space tradeoff have been made. This work will be submitted to ICFP' 2024 very soon.</p>
+  <p>Working on the topic <i>circuit complexity of universal hashing</i>, phased results have been made. Long-term
+    project.</p>
+  <p>Reading <i>Software Founcations</i> by B. C. Pierce et al. to learn about Coq and program verification. About to
+    finish reading the first two volumes in late March.</p>
+  <p>Reading the main thread of <i>Types and Programming Languages</i>. About to finish in late May.</p>
+  <h2>Important Coursework</h2>
+  Most getting an A grade (≤ 30% at Fudan, usually ≤ 20% at HKU), no less than B+.
+  <ul>
     <li>Set theory & graph theory (honor)</li>
     <li>Algebraic structures & mathematical logic (honor)</li>
     <li>Functional programming</li>
@@ -90,6 +110,7 @@
     <li>Operating systems</li>
     <li>Programming languages (in coming semester)</li>
     <li>Compilers (honor) (in coming semester)</li>
-    </ul>
-  </body>
+  </ul>
+</body>
+
 </html>
